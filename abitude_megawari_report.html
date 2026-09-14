@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>아비튜드 26년 3Q 메가와리 회고 · Qoo10 Japan</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+:root{--navy:#0A1442;--navy2:#16204d;--blue:#4472C4;--accent:#ED7D31;--green:#1F8A4C;--red:#C0392B;--ink:#1a1f36;--muted:#6b7280;--bg:#fff;--soft:#f5f7fb;--line:#e4e9f2;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--blue);text-transform:uppercase;margin-bottom:14px}
+h2.sec{font-size:clamp(26px,3.4vw,38px);font-weight:800;line-height:1.25;color:var(--navy);letter-spacing:-0.03em;margin-bottom:18px}
+h3.sub{font-size:20px;font-weight:800;color:var(--navy);margin:42px 0 14px;letter-spacing:-0.02em}
+.lead{font-size:17px;color:#3b4252;max-width:880px;margin-bottom:8px}
+.muted{color:var(--muted)}strong,b{font-weight:700}
+.pos{color:var(--green);font-weight:700}.neg{color:var(--red);font-weight:700}.acc{color:var(--accent);font-weight:700}
+nav{position:sticky;top:0;z-index:50;background:rgba(10,20,66,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:800;color:#fff}.brand b{color:var(--accent)}
+.navlinks{display:flex;gap:19px}
+.navlinks a{color:#c7cee0;text-decoration:none;font-size:13.5px;font-weight:600;transition:color .2s}
+.navlinks a:hover{color:#fff}
+@media(max-width:940px){.navlinks{display:none}}
+.hero{background:radial-gradient(1200px 500px at 80% -10%,#24386e 0,transparent 60%),linear-gradient(135deg,#0A1442 0%,#16204d 55%,#1d2a5e 100%);color:#fff;border:none;padding:84px 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 85% 0%,rgba(68,114,196,.35),transparent 60%)}
+.hero .wrap{position:relative;z-index:2}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;color:#9fb1e6;border:1px solid rgba(159,177,230,.4);border-radius:999px;padding:7px 15px;margin-bottom:24px}
+.tag .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero h1{font-size:clamp(32px,5vw,54px);font-weight:800;line-height:1.18;letter-spacing:-0.035em;margin-bottom:22px}
+.hero h1 .hl{color:#7ea0e8}.hero h1 .ac{color:var(--accent)}
+.hero p.sub{font-size:18px;color:#c4cce4;max-width:820px;margin-bottom:40px;line-height:1.75}
+.meta{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:26px}
+.meta .m{padding-right:38px;margin-right:38px;border-right:1px solid rgba(255,255,255,.14)}
+.meta .m:last-child{border-right:none;padding-right:0;margin-right:0}
+.meta .k{font-size:12px;color:#8b97c4;letter-spacing:.08em;margin-bottom:5px}
+.meta .v{font-size:16px;color:#fff;font-weight:700}
+@media(max-width:600px){.meta .m{border-right:none;border-bottom:1px solid rgba(255,255,255,.12);padding:10px 0;margin:0;width:100%}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:24px 22px}
+.stat .num{font-size:clamp(24px,3.2vw,34px);font-weight:800;color:var(--navy);letter-spacing:-0.03em;line-height:1.1}
+.stat .num.acc{color:var(--accent)}.stat .num.pos{color:var(--green)}.stat .num.neg{color:var(--red)}
+.stat .lbl{font-size:13.5px;color:var(--muted);margin-top:8px;font-weight:600}
+.stat .sub{font-size:12.5px;color:#9aa3b2;margin-top:3px}
+@media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}}
+.grid{display:grid;gap:18px}.grid>*{min-width:0}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:880px){.g4,.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.g4,.g3,.g2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 12px 30px rgba(16,28,70,.08);transform:translateY(-2px)}
+.card .no{font-size:13px;font-weight:800;color:var(--accent);margin-bottom:8px}
+.card h3{font-size:16.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.4}
+.card p{font-size:14px;color:#4b5563;line-height:1.65}
+.callout{background:linear-gradient(180deg,#fff8ef,#fff3e2);border:1px solid #f3d9b5;border-left:5px solid var(--accent);border-radius:12px;padding:22px 26px;margin-top:26px;font-size:15.5px;color:#5a4318;line-height:1.7}
+.callout b{color:#7a3d00}
+.callout.navy{background:linear-gradient(180deg,#f3f6fc,#eef2fb);border-color:#cdd9f0;border-left-color:var(--blue);color:#1f2a4d}
+.callout.navy b{color:var(--navy)}
+.callout.warn{background:linear-gradient(180deg,#fdf1f0,#fbe9e7);border-color:#f0cfcb;border-left-color:var(--red);color:#5c2b25}
+.callout.warn b{color:#8c2f22}
+.callout.good{background:linear-gradient(180deg,#f0f9f3,#e9f5ee);border-color:#c2e3ce;border-left-color:var(--green);color:#1d4a31}
+.callout.good b{color:#13603a}
+.chartbox{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:30px 28px;margin-top:24px}
+.chartbox .ctitle{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:22px}
+.bars{display:flex;align-items:flex-end;gap:24px;height:230px;padding-top:10px}
+.barcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.barcol .bval{font-size:15px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.barcol .bar{width:62%;max-width:88px;border-radius:8px 8px 0 0;background:var(--blue)}
+.barcol .blabel{font-size:13px;color:var(--muted);margin-top:12px;font-weight:600;text-align:center;line-height:1.35}
+.daybars{display:flex;align-items:flex-end;gap:6px;height:210px}
+.daycol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.daycol .db{width:80%;border-radius:4px 4px 0 0;background:#9db4dd}
+.daycol .dl{font-size:10.5px;color:#8a93a6;margin-top:6px;text-align:center;line-height:1.25}
+.hbar{display:grid;grid-template-columns:230px 1fr 96px;align-items:center;gap:14px;margin-bottom:12px}
+.hbar .hlbl{font-size:13px;font-weight:700;color:#374151;text-align:right}
+.hbar .htrack{background:#e9edf5;border-radius:6px;height:24px;overflow:hidden}
+.hbar .hfill{height:100%;border-radius:6px;background:linear-gradient(90deg,#5b86d6,#3a63b8)}
+.hbar .hfill.acc{background:linear-gradient(90deg,#f0a763,#e07d2f)}
+.hbar .hfill.neg{background:linear-gradient(90deg,#e88080,#c0392b)}
+.hbar .hval{font-size:13.5px;font-weight:800}
+@media(max-width:600px){.hbar{grid-template-columns:118px 1fr 62px;gap:8px}.hbar .hlbl{font-size:11px}}
+.tbl{width:100%;border-collapse:collapse;margin-top:22px;font-size:14px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.tbl th{background:var(--navy);color:#fff;font-weight:700;padding:12px 14px;text-align:left;font-size:13px;white-space:nowrap}
+.tbl td{padding:11px 14px;border-top:1px solid var(--line)}
+.tbl tr:nth-child(even) td{background:var(--soft)}
+.tbl .hi td{background:#eaf0fb !important;font-weight:700}
+.tbl td.c,.tbl th.c{text-align:center}
+.tbl td.r,.tbl th.r{text-align:right;white-space:nowrap}
+.scrollx{overflow-x:auto}
+.list{margin-top:18px}
+.li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.li .ln{flex:none;width:30px;height:30px;border-radius:8px;background:var(--navy);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.li .lt{font-size:15.5px;font-weight:700;color:var(--navy);margin-bottom:3px}
+.li .ld{font-size:14px;color:#4b5563;line-height:1.6}
+.verdict{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;border-radius:999px;padding:5px 12px;letter-spacing:-0.01em}
+.v-good{background:#e7f5ec;color:#166b3c;border:1px solid #b9e2c9}
+.v-bad{background:#fdecea;color:#9b2c1f;border:1px solid #f3c9c3}
+.v-mid{background:#fff5e6;color:#8a5a12;border:1px solid #f3ddb5}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-top:16px}
+.ccard.bad{border-left:5px solid var(--red)}
+.ccard.good{border-left:5px solid var(--green)}
+.ccard.mid{border-left:5px solid var(--accent)}
+.chead{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:6px}
+.crank{font-size:12px;font-weight:800;color:#fff;background:var(--navy);border-radius:7px;padding:4px 9px}
+.cname{font-size:16.5px;font-weight:800;color:var(--navy)}
+.ctype{font-size:12px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.oneline{font-size:15px;color:#1f2a4d;font-weight:700;margin:10px 0 14px;line-height:1.6}
+.cimg{float:right;width:200px;margin:2px 0 14px 22px}
+.cimg img{width:100%;border-radius:10px;border:1px solid var(--line);display:block}
+.cimg .cap{font-size:11.5px;color:#9aa3b2;margin-top:6px;text-align:center}
+@media(max-width:700px){.cimg{float:none;width:100%;max-width:300px;margin:0 auto 14px}}
+.mets{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.met{background:var(--soft);border:1px solid var(--line);border-radius:11px;padding:11px 13px}
+.met .mk{font-size:11.5px;color:var(--muted);font-weight:600;margin-bottom:3px}
+.met .mv{font-size:19px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;line-height:1.15}
+.met .mv.g{color:var(--green)}.met .mv.r{color:var(--red)}
+.met .ms{font-size:11px;color:#9aa3b2;margin-top:2px}
+@media(max-width:600px){.mets{grid-template-columns:repeat(2,1fr)}}
+.note{font-size:13.5px;color:#4b5563;line-height:1.7}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.figs figure{margin:0}
+.figs img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
+.figs figcaption{font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.5}
+@media(max-width:880px){.figs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.figs{grid-template-columns:1fr}}
+.wide{margin-top:24px}
+.wide img{width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+.wide .cap{font-size:12px;color:var(--muted);margin-top:8px}
+footer{background:var(--navy);color:#c4cce4;padding:50px 0;border:none}
+footer .wrap{display:flex;flex-direction:column;gap:12px}
+footer .fbrand{font-size:21px;font-weight:800;color:#fff}
+footer .fnote{font-size:13px;color:#8b97c4;line-height:1.7}
+@media print{nav{display:none}section{padding:34px 0;break-inside:auto}.card:hover{transform:none;box-shadow:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="brand">ABI<b>TUDE</b> · Qoo10 JP</div>
+  <div class="navlinks">
+    <a href="#snap">한눈에</a><a href="#compare">8월 vs 9월</a><a href="#type">유형별</a>
+    <a href="#creative">고효율 소재</a><a href="#infl">인플루언서</a><a href="#media">매체별</a>
+    <a href="#qoo10">큐텐 운영</a><a href="#next">NEXT</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="tag"><span class="dot"></span>26년 3Q · 메가와리 회고</span>
+  <h1>4개월 <span class="ac">0엔</span>에서<br><span class="hl">첫 매출</span>이 나온 13일</h1>
+  <p class="sub">일본에 카테고리 자체가 없는 초음파 면도기 세척기로, 8월 메가포는 구매 0건으로 끝났습니다.
+  같은 광고비로 9월 메가와리에서 매출 4건과 신규 고객 4명을 확보했습니다. 무엇이 달라졌는지 정리했습니다.</p>
+  <div class="meta">
+    <div class="m"><div class="k">대상 기간</div><div class="v">8/28 ~ 9/9 · 13일</div></div>
+    <div class="m"><div class="k">총 매출</div><div class="v">42,240엔 · 4건</div></div>
+    <div class="m"><div class="k">총 광고비</div><div class="v">약 189.4만원</div></div>
+    <div class="m"><div class="k">매체</div><div class="v">Meta · SingleOne · X · IG</div></div>
+  </div>
+</div></header>
+
+<!-- 00 -->
+<section id="snap"><div class="wrap">
+  <span class="eyebrow">00 · 한눈에</span>
+  <h2 class="sec">돈이 아니라 소재가 바꿨습니다</h2>
+  <p class="lead">8월과 9월의 광고비는 거의 같았습니다. 도달한 사람 수도 비슷했습니다. 바뀐 것은 <b>소재 유형</b> 하나입니다.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="num pos">2.6배</div><div class="lbl">링크 클릭 증가</div><div class="sub">8,564 → 22,114</div></div>
+    <div class="stat"><div class="num acc">+6.6%</div><div class="lbl">도달 증가에 그침</div><div class="sub">20.8만 → 22.1만</div></div>
+    <div class="stat"><div class="num pos">-40%</div><div class="lbl">CPC 하락</div><div class="sub">₩104 → ₩62</div></div>
+    <div class="stat"><div class="num acc">0 → 4건</div><div class="lbl">구매 건수</div><div class="sub">신규 고객 4명</div></div>
+  </div>
+
+  <div class="chartbox">
+    <div class="ctitle">일자별 유입자수 — 주황색은 매출 발생일</div>
+    <div class="daybars">
+      <div class="daycol"><div class="db" style="height:71%;background:#ED7D31"></div><div class="dl">8/28<br>금</div></div>
+      <div class="daycol"><div class="db" style="height:51%"></div><div class="dl">8/29<br>토</div></div>
+      <div class="daycol"><div class="db" style="height:51%;background:#ED7D31"></div><div class="dl">8/30<br>일</div></div>
+      <div class="daycol"><div class="db" style="height:58%"></div><div class="dl">8/31<br>월</div></div>
+      <div class="daycol"><div class="db" style="height:74%"></div><div class="dl">9/1<br>화</div></div>
+      <div class="daycol"><div class="db" style="height:94%;background:#ED7D31"></div><div class="dl">9/2<br>수</div></div>
+      <div class="daycol"><div class="db" style="height:50%"></div><div class="dl">9/3<br>목</div></div>
+      <div class="daycol"><div class="db" style="height:45%"></div><div class="dl">9/4<br>금</div></div>
+      <div class="daycol"><div class="db" style="height:42%"></div><div class="dl">9/5<br>토</div></div>
+      <div class="daycol"><div class="db" style="height:52%;background:#ED7D31"></div><div class="dl">9/6<br>일</div></div>
+      <div class="daycol"><div class="db" style="height:61%"></div><div class="dl">9/7<br>월</div></div>
+      <div class="daycol"><div class="db" style="height:66%"></div><div class="dl">9/8<br>화</div></div>
+      <div class="daycol"><div class="db" style="height:100%"></div><div class="dl">9/9<br>수</div></div>
+    </div>
+    <p class="muted" style="font-size:12.5px;margin-top:14px;line-height:1.6">
+      매출 4건이 <b>전부 쿠폰 이벤트일 또는 일요일</b>에 발생했습니다. 평일에는 13일 내내 한 건도 없었고, 유입은 매일 700~1,600명씩 들어왔습니다.</p>
+  </div>
+
+  <div class="callout navy"><b>이번 행사의 결론은 세 줄입니다.</b><br>
+    · 유입을 만드는 단계는 작동했습니다 — CTR 6.35%, 도착 1명당 ₩102<br>
+    · 결제는 <b>쿠폰 타이밍에 종속</b>됐습니다 — 이벤트일 4건 / 평일 0건<br>
+    · 병목은 유입이 아니라 <b>유입 이후</b>입니다 — 장바구니 담기율 0.19%, 리뷰 0건</div>
+</div></section>
+
+<!-- 01 -->
+<section id="compare"><div class="wrap">
+  <span class="eyebrow">01 · 통제된 비교</span>
+  <h2 class="sec">같은 돈, 같은 사람, 다른 결과</h2>
+  <p class="lead">8월 메가포와 9월 메가와리는 일평균 광고비가 5.8% 차이입니다. 예산 규모로는 결과 차이를 설명할 수 없습니다.</p>
+
+  <div class="scrollx"><table class="tbl">
+    <tr><th>지표</th><th class="r">8월 메가포</th><th class="r">9월 메가와리</th><th class="r">증감</th></tr>
+    <tr><td>일평균 Meta 광고비</td><td class="r">₩99,178</td><td class="r">₩104,951</td><td class="r">+5.8%</td></tr>
+    <tr><td>Meta 도달</td><td class="r">207,630</td><td class="r">221,339</td><td class="r">+6.6%</td></tr>
+    <tr><td>Meta 노출</td><td class="r">301,841</td><td class="r">348,521</td><td class="r">+15.5%</td></tr>
+    <tr class="hi"><td>링크 클릭</td><td class="r">8,564</td><td class="r">22,114</td><td class="r pos">+158.2%</td></tr>
+    <tr class="hi"><td>CTR</td><td class="r">2.84%</td><td class="r">6.35%</td><td class="r pos">+123.6%</td></tr>
+    <tr class="hi"><td>CPC</td><td class="r">₩104</td><td class="r">₩62</td><td class="r pos">-40.4%</td></tr>
+    <tr><td>CPM</td><td class="r">₩2,957</td><td class="r">₩3,915</td><td class="r neg">+32.4%</td></tr>
+    <tr><td>총 PV</td><td class="r">4,248</td><td class="r">13,439</td><td class="r">+216%</td></tr>
+    <tr class="hi"><td>PV 1건당 비용</td><td class="r">₩210</td><td class="r">₩102</td><td class="r pos">-51.4%</td></tr>
+    <tr class="hi"><td>검색 유입</td><td class="r">2건</td><td class="r">71건</td><td class="r pos">+3,450%</td></tr>
+    <tr><td>외부유입 비중</td><td class="r">81.8%</td><td class="r">95.0%</td><td class="r">+13.2%p</td></tr>
+    <tr class="hi"><td>매출</td><td class="r">0엔 / 0건</td><td class="r">42,240엔 / 4건</td><td class="r">—</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:12.5px;margin-top:10px">PV는 8월 8/1~8/8(8일) / 9월 8/28~9/9(13일), Meta 지표는 8월 8/1~8/9(9일) 기준</p>
+
+  <div class="callout"><b>도달은 같고 반응만 달라졌습니다.</b><br>
+    거의 동일한 규모의 사용자(+6.6%)에게 노출했는데 링크 클릭이 2.6배가 됐습니다.
+    노출 증가폭(+15.5%)보다 클릭 증가폭(+158.2%)이 10배 이상 커서, <b>타깃 확대가 아니라 소재 반응률 자체의 개선</b>이 원인입니다.
+    CPM이 32.4% 올랐는데도 CPC가 40.4% 내려간 것이 그 증거입니다.</div>
+
+  <div class="callout warn"><b>8월 메가포는 전 연령에서 고르게 낮았습니다.</b><br>
+    35-44세 2.76% · 25-34세 2.98% · 45-54세 2.87% · 18-24세 2.61%<br>
+    타깃 설정의 문제가 아니라 <b>소재 자체의 반응률 한계</b>였다는 뜻입니다.</div>
+</div></section>
+
+<!-- 02 -->
+<section id="type"><div class="wrap">
+  <span class="eyebrow">02 · 유형별</span>
+  <h2 class="sec">인플루언서 소재 vs 브랜드 소재</h2>
+  <p class="lead">Meta 소재를 인플루언서 릴스와 브랜드 제작 이미지 두 축으로 묶으면 순서가 명확합니다.</p>
+
+  <div class="chartbox">
+    <div class="ctitle">유형별 핵심 지표</div>
+    <div class="hbar"><div class="hlbl">CTR · 인플루언서</div><div class="htrack"><div class="hfill" style="width:100%"></div></div><div class="hval pos">8.89%</div></div>
+    <div class="hbar"><div class="hlbl">CTR · 브랜드</div><div class="htrack"><div class="hfill neg" style="width:34.6%"></div></div><div class="hval">3.08%</div></div>
+    <div class="hbar" style="margin-top:22px"><div class="hlbl">도착 1명당 · 인플루언서</div><div class="htrack"><div class="hfill" style="width:60.8%"></div></div><div class="hval pos">₩87</div></div>
+    <div class="hbar"><div class="hlbl">도착 1명당 · 브랜드</div><div class="htrack"><div class="hfill neg" style="width:100%"></div></div><div class="hval">₩143</div></div>
+    <div class="hbar" style="margin-top:22px"><div class="hlbl">페이지 도착률 · 인플루언서</div><div class="htrack"><div class="hfill acc" style="width:73.9%"></div></div><div class="hval">56.1%</div></div>
+    <div class="hbar"><div class="hlbl">페이지 도착률 · 브랜드</div><div class="htrack"><div class="hfill" style="width:100%"></div></div><div class="hval pos">75.9%</div></div>
+  </div>
+
+  <div class="scrollx"><table class="tbl">
+    <tr><th>유형</th><th class="r">지출</th><th class="r">비중</th><th class="r">노출</th><th class="r">링크클릭</th><th class="r">CTR</th><th class="r">CPC</th><th class="r">랜딩조회</th><th class="r">도착률</th><th class="r">도착 1명당</th></tr>
+    <tr class="hi"><td>인플루언서 소재</td><td class="r">₩854,287</td><td class="r">62.6%</td><td class="r">195,927</td><td class="r">17,410</td><td class="r">8.89%</td><td class="r">₩49</td><td class="r">9,767</td><td class="r">56.1%</td><td class="r">₩87</td></tr>
+    <tr><td>브랜드 소재</td><td class="r">₩510,063</td><td class="r">37.4%</td><td class="r">152,593</td><td class="r">4,704</td><td class="r">3.08%</td><td class="r">₩108</td><td class="r">3,568</td><td class="r">75.9%</td><td class="r">₩143</td></tr>
+    <tr class="hi"><td>합계</td><td class="r">₩1,364,350</td><td class="r">100%</td><td class="r">348,520</td><td class="r">22,114</td><td class="r">6.35%</td><td class="r">₩62</td><td class="r">13,335</td><td class="r">60.3%</td><td class="r">₩102</td></tr>
+  </table></div>
+
+  <h3 class="sub">인플루언서 소재 · 세트별</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>광고 세트</th><th class="r">지출</th><th class="r">링크클릭</th><th class="r">CTR</th><th class="r">CPC</th><th class="r">랜딩조회</th><th class="r">도착 1명당</th></tr>
+    <tr><td>파트너십 - 사본</td><td class="r">₩451,961</td><td class="r">9,434</td><td class="r">9.44%</td><td class="r">₩48</td><td class="r">5,099</td><td class="r">₩89</td></tr>
+    <tr><td>파트너십</td><td class="r">₩380,583</td><td class="r">7,664</td><td class="r">8.34%</td><td class="r">₩50</td><td class="r">4,500</td><td class="r">₩85</td></tr>
+    <tr><td>파트너십 - 분리</td><td class="r">₩21,743</td><td class="r">312</td><td class="r">7.58%</td><td class="r">₩70</td><td class="r">168</td><td class="r">₩129</td></tr>
+    <tr class="hi"><td>소계</td><td class="r">₩854,287</td><td class="r">17,410</td><td class="r">8.89%</td><td class="r">₩49</td><td class="r">9,767</td><td class="r">₩87</td></tr>
+  </table></div>
+
+  <h3 class="sub">브랜드 소재 · 세트별</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>광고 세트</th><th class="r">지출</th><th class="r">링크클릭</th><th class="r">CTR</th><th class="r">CPC</th><th class="r">랜딩조회</th><th class="r">도착 1명당</th></tr>
+    <tr><td>B급</td><td class="r">₩400,061</td><td class="r">3,773</td><td class="r">3.09%</td><td class="r">₩106</td><td class="r">2,840</td><td class="r">₩141</td></tr>
+    <tr><td>B급 추가</td><td class="r">₩110,002</td><td class="r">931</td><td class="r">3.07%</td><td class="r">₩118</td><td class="r">728</td><td class="r">₩151</td></tr>
+    <tr class="hi"><td>소계</td><td class="r">₩510,063</td><td class="r">4,704</td><td class="r">3.08%</td><td class="r">₩108</td><td class="r">3,568</td><td class="r">₩143</td></tr>
+  </table></div>
+
+  <div class="wide"><img src="images/04_9월_세트별_소재.png" alt="파트너십 vs B급 세트별 성과">
+    <div class="cap">파트너십(릴스) vs B급(정지 이미지) 세트별 성과 및 소재</div></div>
+
+  <div class="callout navy"><b>지출 62.6%로 클릭의 78.7%, 랜딩조회의 73.2%를 인플루언서 소재가 만들었습니다.</b><br>
+    · CTR 8.89% vs 3.08% — <b>2.9배</b><br>
+    · CPC ₩49 vs ₩108 — <b>절반 이하</b><br>
+    · 도착 1명당 ₩87 vs ₩143 — <b>39% 저렴</b><br>
+    → 다만 클릭 대비 페이지 도착률은 브랜드 소재가 75.9%로 20%p 높습니다. <b>볼륨은 릴스, 유입 질은 이미지</b>가 담당하는 구조로 두 축 병행이 유효합니다.</div>
+
+  <div class="callout warn"><b>클릭의 39.7%가 페이지 도달 전에 사라졌습니다.</b><br>
+    링크 클릭 22,114건 중 랜딩조회는 13,335건으로, <b>미도달 8,779건 · 약 541,664원</b>이 소진됐습니다.
+    인플루언서 계열 도착률(56.1%)이 브랜드(75.9%) 수준이었다면 <b>3,450명을 더 확보</b>할 수 있었던 구간입니다.
+    릴스 소재의 CTA 명확화와 오클릭 유발 요소 축소가 다음 과제입니다.</div>
+</div></section>
+
+<!-- 03 -->
+<section id="creative"><div class="wrap">
+  <span class="eyebrow">03 · 고효율 소재</span>
+  <h2 class="sec">잘된 소재 — 왜 잘됐나</h2>
+  <p class="lead">평가 기준은 CTR이 아니라 <b>페이지 도착 1명당 비용</b>입니다. 행사 중반에 기준을 바꿨습니다.</p>
+
+  <div class="ccard good">
+    <div class="chead"><span class="crank">1위</span><span class="cname">@f_ksk_</span><span class="ctype">인플루언서 릴스</span><span class="verdict v-good">🟢 도착단가 ₩85</span></div>
+    <div class="cimg"><img src="images/11_소재_f_ksk.png" alt="@f_ksk_ 릴스"><div class="cap">@f_ksk_ · 35초</div></div>
+    <div class="oneline">노출 8.9만 회 규모에서도 CTR 8%대를 유지한 <b>대규모 검증 소재</b>입니다.</div>
+    <div class="mets">
+      <div class="met"><div class="mk">도착 1명당</div><div class="mv g">₩85</div><div class="ms">계정 평균 ₩102</div></div>
+      <div class="met"><div class="mk">CTR</div><div class="mv g">8.30%</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">CPC</div><div class="mv">₩50</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">지출</div><div class="mv">₩366,814</div><div class="ms">노출 89,112</div></div>
+    </div>
+    <p class="note">소구는 <b>「彼氏や旦那へのプレゼント」 — 여성이 남친·남편에게 주는 선물 각도</b>이고, Qoo10 메가와리를 직접 언급합니다.
+    오가닉 조회도 132,750회로 2위였고, <b>SingleOne에서도 2위</b>를 기록해 두 매체 모두에서 통한 유일한 소재입니다.</p>
+  </div>
+
+  <div class="ccard good">
+    <div class="chead"><span class="crank">2위</span><span class="cname">@h13i_14</span><span class="ctype">인플루언서 릴스</span><span class="verdict v-good">🟢 도착단가 ₩87</span></div>
+    <div class="cimg"><img src="images/10_소재_h13i_14.png" alt="@h13i_14 릴스"><div class="cap">@h13i_14 · 41초</div></div>
+    <div class="oneline">오가닉 조회 <b>142,777회로 13건 중 1위</b>이면서 광고 지출도 1위 — 알고리즘이 같은 소재를 골랐습니다.</div>
+    <div class="mets">
+      <div class="met"><div class="mk">도착 1명당</div><div class="mv g">₩87</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">CTR</div><div class="mv g">8.90%</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">CPC</div><div class="mv">₩48</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">지출</div><div class="mv">₩392,320</div><div class="ms">노출 91,266</div></div>
+    </div>
+    <p class="note">소구는 <b>「髭剃りする22歳ナイトルーティーン」 — 남성 본인의 밤 면도 루틴</b>입니다.
+    1위(선물)와 2위(본인 루틴)가 <b>서로 다른 축</b>이라, 특정 소구가 아니라 <b>릴스 포맷 자체</b>가 이 계정에서 작동한다고 보는 것이 정확합니다.</p>
+  </div>
+
+  <div class="ccard mid">
+    <div class="chead"><span class="crank">3위</span><span class="cname">@hy.1.jp</span><span class="ctype">인플루언서 릴스</span><span class="verdict v-mid">🟠 예산 미확보</span></div>
+    <div class="oneline">도착단가 <b>₩82로 계정 최저</b>인데 지출은 12,500원에 그쳤습니다. <b>확대 여지가 가장 큰 소재</b>입니다.</div>
+    <div class="mets">
+      <div class="met"><div class="mk">도착 1명당</div><div class="mv g">₩82</div><div class="ms">계정 1위</div></div>
+      <div class="met"><div class="mk">CTR</div><div class="mv g">12.59%</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">CPC</div><div class="mv g">₩41</div><div class="ms"></div></div>
+      <div class="met"><div class="mk">지출</div><div class="mv r">₩12,500</div><div class="ms">노출 2,430</div></div>
+    </div>
+    <p class="note">오가닉 조회는 17,582회로 11위에 그쳐 주목받지 못했으나 광고 효율은 최상위입니다.
+    소구는 <b>「新しいシェービング習慣 — 지금까지 물로만 헹궈 끝냈던 방식」</b>으로 문제 제기형입니다. 10월 상시기간에 노출 확보 후 재평가가 필요합니다.</p>
+  </div>
+
+  <h3 class="sub">브랜드 소재 상위</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>소재</th><th>소구</th><th class="r">지출</th><th class="r">CTR</th><th class="r">CPC</th><th class="r">도착 1명당</th></tr>
+    <tr><td>B급_4</td><td>「彼氏のカミソリ勝手にオシャレに変えてみた」 여자친구 시점</td><td class="r">₩187,121</td><td class="r">3.18%</td><td class="r">₩103</td><td class="r">₩135</td></tr>
+    <tr><td>B급_6</td><td>「私の彼氏…アゴがつるつるで可愛い」 만화</td><td class="r">₩173,627</td><td class="r">3.01%</td><td class="r">₩109</td><td class="r">₩146</td></tr>
+    <tr><td>B급_추가2</td><td>「置くだけ、10秒。コスパが変わる」 스펙·가성비</td><td class="r">₩108,909</td><td class="r">3.13%</td><td class="r">₩118</td><td class="r">₩150</td></tr>
+  </table></div>
+  <p class="note" style="margin-top:12px">브랜드 소재 상위 3개가 CTR 3.01~3.18%로 균일합니다. 여자친구 시점과 스펙 소구의 반응률 차이가 거의 없어,
+  소구가 아니라 <b>정지 이미지 포맷 자체의 상한</b>으로 판단합니다.</p>
+
+  <div class="wide"><img src="images/03_9월_메타통합_소재TOP3.png" alt="Meta 통합 추세 및 소재 TOP3">
+    <div class="cap">Meta 통합 추세 및 소재별 성과 TOP3</div></div>
+</div></section>
+
+<!-- 04 -->
+<section id="infl"><div class="wrap">
+  <span class="eyebrow">04 · 인플루언서</span>
+  <h2 class="sec">IG 시딩이 X보다 2.3배 큰 노출을 만들었습니다</h2>
+
+  <div class="chartbox">
+    <div class="ctitle">채널별 총 노출</div>
+    <div class="bars">
+      <div class="barcol"><div class="bval">597,166</div><div class="bar" style="height:100%"></div><div class="blabel">IG 릴스 시딩<br><span class="muted" style="font-size:11.5px">13건 · 활용권 포함</span></div></div>
+      <div class="barcol"><div class="bval">259,000</div><div class="bar" style="height:43%;background:var(--accent)"></div><div class="blabel">X 타이업<br><span class="muted" style="font-size:11.5px">1건</span></div></div>
+    </div>
+  </div>
+
+  <h3 class="sub">바이럴 마케팅 (X)</h3>
+  <div class="grid g2" style="align-items:start">
+    <div>
+      <p class="lead" style="font-size:15.5px">8/27 투고로 <b>25.9만 조회</b>를 확보했습니다. 일본 시장에 카테고리 자체가 부재한 제품의 첫 대형 노출입니다.</p>
+      <p class="note" style="margin-top:12px">소구는 <b>「カミソリをそのまま置いておくと危険です」</b> — 면도기를 그대로 두면 위험하다는 문제 제기로 시작해 해결책으로 제품을 연결하는 구성입니다.
+      IG 시딩의 청결 소구와 축이 같습니다.</p>
+    </div>
+    <div><img src="images/14_X타이업_투고.png" alt="X 타이업 투고" style="width:100%;border-radius:12px;border:1px solid var(--line)">
+      <p class="cap muted" style="font-size:11.5px;margin-top:7px">@keismi_ · 2026.08.27 · 25.9만 조회</p></div>
+  </div>
+
+  <h3 class="sub">인플루언서 투고 (IG)</h3>
+  <p class="lead" style="font-size:15.5px">13명 릴스를 확보했고 전 건 <b>6개월간 PA 광고 집행 권한</b>이 포함돼 있습니다. 활용권 만료는 2027년 2월 24~28일로, 10월 메가포와 11월 메가와리를 모두 커버합니다.</p>
+
+  <div class="figs">
+    <figure><img src="images/10_소재_h13i_14.png" alt="@h13i_14"><figcaption>@h13i_14 · 조회 142,777 · Meta 1위</figcaption></figure>
+    <figure><img src="images/11_소재_f_ksk.png" alt="@f_ksk_"><figcaption>@f_ksk_ · 조회 132,750 · 양 매체 2위</figcaption></figure>
+    <figure><img src="images/12_소재_mmmshnn.png" alt="@mmmshnn"><figcaption>@mmmshnn · CTR 15.33% · SingleOne 3위</figcaption></figure>
+    <figure><img src="images/13_소재_amuamu01.png" alt="@amuamu.01"><figcaption>@amuamu.01 · 조회 45,320 · 오가닉 3위</figcaption></figure>
+  </div>
+
+  <div class="scrollx"><table class="tbl">
+    <tr><th>인플루언서</th><th class="r">조회수</th><th class="r">좋아요</th><th class="r">저장</th><th class="r">ER</th><th>소구</th></tr>
+    <tr class="hi"><td>@h13i_14</td><td class="r">142,777</td><td class="r">401</td><td class="r">9</td><td class="r">0.29%</td><td>남성 본인 · 22세 나이트 루틴</td></tr>
+    <tr class="hi"><td>@f_ksk_</td><td class="r">132,750</td><td class="r">-</td><td class="r">2</td><td class="r">-</td><td>선물 · 남친/남편 프레젠트</td></tr>
+    <tr><td>@_kota_dayo_</td><td class="r">75,372</td><td class="r">1,088</td><td class="r">12</td><td class="r">1.52%</td><td>남성 본인 · 외출 전 면도 루틴</td></tr>
+    <tr><td>@amuamu.01</td><td class="r">45,320</td><td class="r">92</td><td class="r">2</td><td class="r">0.21%</td><td>아내 시점 · 남편 몰래 준비</td></tr>
+    <tr><td>@taku_bistro</td><td class="r">39,500</td><td class="r">-</td><td class="r">5</td><td class="r">-</td><td>청결 · 선물 추천</td></tr>
+    <tr><td>@mmmshnn</td><td class="r">28,924</td><td class="r">183</td><td class="r">1</td><td class="r">0.65%</td><td>청결 · 매일 피부에 닿는 날</td></tr>
+    <tr><td>@__lilisasa</td><td class="r">27,332</td><td class="r">-</td><td class="r">3</td><td class="r">-</td><td>청결 · 사용 후 어떻게 하나요?</td></tr>
+    <tr><td>@mocharu_3</td><td class="r">26,627</td><td class="r">163</td><td class="r">3</td><td class="r">0.68%</td><td>청결 · 이렇게 씻고 있지 않나요?</td></tr>
+    <tr><td>@kassun28</td><td class="r">24,790</td><td class="r">-</td><td class="r">2</td><td class="r">-</td><td>제품 사용 간편성</td></tr>
+    <tr><td>@naoki_kurashi</td><td class="r">17,606</td><td class="r">52</td><td class="r">0</td><td class="r">0.30%</td><td>남성 본인 · 아내에게 인기 얻는 관리</td></tr>
+    <tr><td>@hy.1.jp</td><td class="r">17,582</td><td class="r">221</td><td class="r">3</td><td class="r">1.34%</td><td>새 쉐이빙 습관 · 물로만 헹구던 방식</td></tr>
+    <tr><td>@fsn_2525</td><td class="r">14,555</td><td class="r">-</td><td class="r">7</td><td class="r">-</td><td>매일 쓰는 쉐이버 손질</td></tr>
+    <tr><td>@____kaaa__</td><td class="r">4,031</td><td class="r">-</td><td class="r">0</td><td class="r">-</td><td>선물 · 동거 중 남친에게</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:12px;margin-top:8px">좋아요 「-」는 미수집분으로 ER 산출에서 제외</p>
+
+  <div class="callout navy"><b>오가닉 1·2위가 광고 지출 1·2위와 정확히 일치합니다.</b><br>
+    @h13i_14(조회 1위 · 광고 1위), @f_ksk_(조회 2위 · 광고 2위) — Meta 알고리즘이 오가닉에서 반응이 좋았던 소재를 광고에서도 선별했습니다.<br>
+    다만 3위부터는 순위가 어긋나며 전체 순위 상관은 <b>0.34로 약합니다.</b> 오가닉 성과만으로 광고 소재를 선정할 수는 없습니다.<br>
+    · @fsn_2525는 오가닉 조회 12위(14,555)이나 저장 7건으로 2위이며, SingleOne에서 장바구니 25건으로 1위를 기록</div>
+</div></section>
+
+<!-- 05 -->
+<section id="media"><div class="wrap">
+  <span class="eyebrow">05 · 매체별</span>
+  <h2 class="sec">같은 소재 풀, 다른 승자</h2>
+  <p class="lead">동일한 인플루언서 소재를 Meta와 SingleOne에 각각 집행했더니 <b>매체별로 승자가 달랐습니다.</b></p>
+
+  <div class="grid g2" style="margin-top:26px">
+    <div class="card">
+      <div class="no">META</div>
+      <h3>도착 1명당 비용 기준 TOP 3</h3>
+      <table class="tbl" style="margin-top:14px">
+        <tr><th>소재</th><th class="r">지출</th><th class="r">CTR</th><th class="r">도착단가</th></tr>
+        <tr class="hi"><td>@hy.1.jp</td><td class="r">₩12,500</td><td class="r">12.59%</td><td class="r">₩82</td></tr>
+        <tr><td>@f_ksk_</td><td class="r">₩366,818</td><td class="r">8.30%</td><td class="r">₩85</td></tr>
+        <tr><td>@h13i_14</td><td class="r">₩414,969</td><td class="r">8.85%</td><td class="r">₩88</td></tr>
+      </table>
+      <p class="note" style="margin-top:12px">노출 1,000회 이상 확보된 소재만 비교. 노출 246~777회 소재는 CTR 14~27%로 잡히나 평가 모수 미달로 제외.</p>
+    </div>
+    <div class="card">
+      <div class="no">SINGLEONE</div>
+      <h3>장바구니 기여 기준 TOP 3</h3>
+      <table class="tbl" style="margin-top:14px">
+        <tr><th>소재</th><th class="r">비용</th><th class="r">CTR</th><th class="r">장바구니</th></tr>
+        <tr class="hi"><td>@fsn_2525</td><td class="r">¥17,744</td><td class="r">3.43%</td><td class="r">25</td></tr>
+        <tr><td>@f_ksk_</td><td class="r">¥5,769</td><td class="r">3.28%</td><td class="r">4</td></tr>
+        <tr><td>@mmmshnn</td><td class="r">¥2,339</td><td class="r">3.61%</td><td class="r">0</td></tr>
+      </table>
+      <p class="note" style="margin-top:12px">장바구니가 집계된 소재가 2건뿐이어서 3위부터는 CTR 기준. SingleOne 리포트는 Qoo10 실측 대비 2~3배 과집계.</p>
+    </div>
+  </div>
+
+  <div class="scrollx"><table class="tbl">
+    <tr><th>인플루언서</th><th class="c">META</th><th class="c">SingleOne</th></tr>
+    <tr class="hi"><td>@f_ksk_</td><td class="c">2위</td><td class="c">2위</td></tr>
+    <tr><td>@h13i_14</td><td class="c">3위</td><td class="c">미집행</td></tr>
+    <tr><td>@hy.1.jp</td><td class="c">1위</td><td class="c">미집행</td></tr>
+    <tr><td>@fsn_2525</td><td class="c">미집행 수준 (₩51)</td><td class="c">1위</td></tr>
+    <tr><td>@mmmshnn</td><td class="c">4위</td><td class="c">3위</td></tr>
+  </table></div>
+
+  <div class="callout"><b>양 매체에서 모두 상위인 소재는 @f_ksk_ 하나뿐입니다.</b><br>
+    @fsn_2525는 Meta에서 51원(노출 18회) 수준으로 거의 집행되지 않았으나 SingleOne에서 장바구니 1위입니다.<br>
+    → <b>소재 평가는 매체별로 분리해야 하며, 한 매체의 결과로 다른 매체의 배분을 결정할 수 없습니다.</b></div>
+
+  <h3 class="sub">SingleOne 전체</h3>
+  <div class="stats">
+    <div class="stat"><div class="num">¥55,993</div><div class="lbl">총 집행액</div><div class="sub">예산 80,000엔 대비 70.0%</div></div>
+    <div class="stat"><div class="num">3.09%</div><div class="lbl">평균 CTR</div><div class="sub">노출 19,512 · 클릭 602</div></div>
+    <div class="stat"><div class="num acc">4.17%</div><div class="lbl">45-54세 CTR</div><div class="sub">전 연령 중 최고</div></div>
+    <div class="stat"><div class="num neg">2배</div><div class="lbl">여성 지면 단가</div><div class="sub">CPM 5,500 vs 2,473</div></div>
+  </div>
+  <p class="note" style="margin-top:14px">연령이 높을수록 반응률이 올라가 <b>40-50대 타깃 가설이 Meta와 SingleOne 양 매체에서 동일하게 확인</b>됐습니다.
+  8/29~8/30에는 충전 지연으로 이틀간 미집행이 발생했습니다.</p>
+</div></section>
+
+<!-- 06 -->
+<section id="qoo10"><div class="wrap">
+  <span class="eyebrow">06 · 큐텐 운영</span>
+  <h2 class="sec">병목은 유입이 아니라 유입 이후입니다</h2>
+
+  <div class="stats">
+    <div class="stat"><div class="num">13,049</div><div class="lbl">유입자수</div><div class="sub">PV 13,439</div></div>
+    <div class="stat"><div class="num neg">0.19%</div><div class="lbl">장바구니 담기율</div><div class="sub">25건</div></div>
+    <div class="stat"><div class="num acc">16.0%</div><div class="lbl">장바구니 → 결제</div><div class="sub">4건</div></div>
+    <div class="stat"><div class="num">10,560엔</div><div class="lbl">객단가</div><div class="sub">ROAS 21.1%</div></div>
+  </div>
+
+  <div class="chartbox">
+    <div class="ctitle">유입 경로 구성 — 외부 광고 의존도 95.0%</div>
+    <div class="hbar"><div class="hlbl">외부유입 (Meta·SingleOne)</div><div class="htrack"><div class="hfill" style="width:100%"></div></div><div class="hval">95.0%</div></div>
+    <div class="hbar"><div class="hlbl">URL 직접입력</div><div class="htrack"><div class="hfill" style="width:2%"></div></div><div class="hval">1.9%</div></div>
+    <div class="hbar"><div class="hlbl">홈(메인페이지)</div><div class="htrack"><div class="hfill" style="width:1.3%"></div></div><div class="hval">1.2%</div></div>
+    <div class="hbar"><div class="hlbl">상품상세페이지</div><div class="htrack"><div class="hfill" style="width:1%"></div></div><div class="hval">0.9%</div></div>
+    <div class="hbar"><div class="hlbl">검색결과</div><div class="htrack"><div class="hfill acc" style="width:0.8%"></div></div><div class="hval">0.7%</div></div>
+    <div class="hbar"><div class="hlbl">프로모션 / 랭킹 / 코스메셀렉트</div><div class="htrack"><div class="hfill neg" style="width:0%"></div></div><div class="hval neg">0%</div></div>
+  </div>
+
+  <div class="callout warn"><b>Qoo10 자체 노출면 유입이 8월·9월 두 행사 연속 0건입니다.</b><br>
+    프로모션 페이지, 랭킹, 코스메셀렉트, 뷰티 카테고리 전부 해당합니다. 행사에 참여하면서 플랫폼 트래픽을 한 건도 받지 못했고,
+    외부 광고 의존도는 오히려 81.8% → 95.0%로 심화됐습니다.<br>
+    → <b>광고를 중단하면 유입이 0에 수렴하는 구조</b>입니다.</div>
+
+  <h3 class="sub">구매 4건의 공통점</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>일자</th><th class="r">매출</th><th>상품</th><th>그날의 성격</th></tr>
+    <tr><td>8/28(금)</td><td class="r">11,760엔</td><td>메인 · 세트 옵션</td><td>1차 쿠폰 시작 / 개시일</td></tr>
+    <tr><td>8/30(일)</td><td class="r">9,360엔</td><td>오션블랙 리스팅</td><td>일요일</td></tr>
+    <tr><td>9/2(수)</td><td class="r">9,360엔</td><td>메인 · 본품 옵션</td><td>2차 쿠폰 발행일</td></tr>
+    <tr><td>9/6(일)</td><td class="r">11,760엔</td><td>메인 · 세트 옵션</td><td>주말쿠폰 종료일</td></tr>
+  </table></div>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card"><div class="no">01</div><h3>쿠폰 타이밍에 종속</h3><p>4건 전부 쿠폰 이벤트일 또는 일요일. 평일 13일간 0건이며 유입은 매일 700~1,600명 유지.</p></div>
+    <div class="card"><div class="no">02</div><h3>세트가 매출의 56%</h3><p>세트 옵션 2건(23,520엔) / 본품 2건(18,720엔). 세트 유도 설계의 근거.</p></div>
+    <div class="card"><div class="no">03</div><h3>일요일 2건</h3><p>결제 절반이 일요일. 예산 배분에 요일 가중은 적용하지 않은 상태였음.</p></div>
+  </div>
+
+  <h3 class="sub">브랜드 인지가 검색으로 형성되기 시작했습니다</h3>
+  <div class="grid g2">
+    <div class="chartbox" style="margin-top:0">
+      <div class="ctitle">검색 유입 — 8월 메가포 vs 9월 메가와리</div>
+      <div class="bars" style="height:180px">
+        <div class="barcol"><div class="bval">2건</div><div class="bar" style="height:3%;background:var(--red)"></div><div class="blabel">8월 메가포<br><span class="muted" style="font-size:11.5px">8일 · 일평균 0.2</span></div></div>
+        <div class="barcol"><div class="bval">71건</div><div class="bar" style="height:100%"></div><div class="blabel">9월 메가와리<br><span class="muted" style="font-size:11.5px">13일 · 일평균 5.5</span></div></div>
+      </div>
+    </div>
+    <div>
+      <table class="tbl" style="margin-top:0">
+        <tr><th>검색어</th><th class="r">유입</th></tr>
+        <tr><td>abitude</td><td class="r">27</td></tr>
+        <tr><td>habitude</td><td class="r">15</td></tr>
+        <tr><td>カミソリ 洗浄</td><td class="r">7</td></tr>
+        <tr><td>カミソリ洗浄機</td><td class="r">5</td></tr>
+        <tr><td>カミソリ洗浄</td><td class="r">4</td></tr>
+        <tr><td>アビチュード</td><td class="r">3</td></tr>
+        <tr><td>超音波洗浄機 カミソリ</td><td class="r">2</td></tr>
+        <tr><td>髭剃り 超音波 · カミソリ 超音波 · 髭剃り洗浄 · カミソリクリーナー</td><td class="r">각 2</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="callout good"><b>브랜드 계열 45건(63%) / 카테고리 키워드 26건(37%)이 형성됐습니다.</b><br>
+    8월 메가포 기간에는 검색어 순위 자체가 형성되지 않았던 상태입니다.
+    「超音波」 조합 검색어가 3종 등장해, <b>제품 원리를 인지한 상태의 검색</b>이 발생하고 있습니다.</div>
+
+  <div class="wide"><img src="images/06_9월_유입채널_검색어.png" alt="유입 채널 및 검색어">
+    <div class="cap">9월 메가와리 유입 채널 구성 및 검색어 순위</div></div>
+</div></section>
+
+<!-- 07 -->
+<section id="next"><div class="wrap">
+  <span class="eyebrow">07 · NEXT</span>
+  <h2 class="sec">10월 메가포 — 검증된 소재로 진입</h2>
+
+  <h3 class="sub">가격 전략</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>구분</th><th>상품</th><th class="r">노출가</th><th>적용 쿠폰</th><th class="r">실결제</th><th class="r">최종체감가</th><th class="r">할인율</th></tr>
+    <tr><td>상시<br>9/10~9/30</td><td>본품</td><td class="r">11,700</td><td>12% (9,000엔+)</td><td class="r">10,296엔</td><td class="r">—</td><td class="r">30.9%</td></tr>
+    <tr><td></td><td>본품+트레이</td><td class="r">14,700</td><td>20% (13,000엔+)</td><td class="r">11,760엔</td><td class="r">—</td><td class="r">34.3%</td></tr>
+    <tr class="hi"><td>메가포<br>10/1~</td><td>본품</td><td class="r">11,700</td><td>메가포10% + 15%</td><td class="r">8,950엔</td><td class="r">8,055엔</td><td class="r">45.9%</td></tr>
+    <tr class="hi"><td></td><td>본품+트레이</td><td class="r">14,700</td><td>메가포10% + 20%</td><td class="r">10,584엔</td><td class="r">8,931엔</td><td class="r">46.8%</td></tr>
+  </table></div>
+  <div class="callout navy"><b>13,000엔 계단이 세트 유도 장치입니다.</b><br>
+    · 본품 노출가 11,700엔은 조건 미달로 낮은 쿠폰만 적용되고, <b>세트만 높은 쿠폰</b>을 받습니다<br>
+    · 상시 기준 세트-본품 차액 1,464엔 — 트레이 옵션 추가금(3,000엔)의 <b>49% 수준</b>으로 세트 선택 유인 확보<br>
+    · 상시 → 메가포 격차는 본품 -13.1% / 세트 -15.6%로, 밀고자 하는 세트에 프로모션 유인을 더 크게 배치<br>
+    · 25%까지 내리지 않은 이유는 <b>11월 메가와리 가격 여지 확보</b> — 단계적 하락 구조 유지</div>
+
+  <h3 class="sub">미디어믹스 (안)</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>항목</th><th class="r">금액</th><th>재원 · 비고</th></tr>
+    <tr><td>Qoo10 운영대행</td><td class="r">₩2,000,000</td><td>신규</td></tr>
+    <tr><td>외부광고 META</td><td class="r">₩1,035,000</td><td>이월 135,687 + 신규</td></tr>
+    <tr><td>외부광고 SingleOne</td><td class="r">₩630,000</td><td>이월 24,007엔 + 신규</td></tr>
+    <tr><td>Qoo10 파워랭크업</td><td class="r">₩50,000</td><td>검색 입찰은 미집행 (검색량 부족)</td></tr>
+    <tr><td>소재 2차 제작 (편집)</td><td class="r">₩200,000</td><td>시딩 활용권 사용 — 신규 제작비 없음</td></tr>
+    <tr class="hi"><td>합계</td><td class="r">₩3,915,000</td><td>9월 대비 시딩 예산 1,650만원 제외</td></tr>
+  </table></div>
+
+  <h3 class="sub">기간별 운영 및 소재 배치</h3>
+  <div class="grid g2">
+    <div class="card"><div class="no">상시 · 9/10~9/30 (21일)</div><h3>소재 검증 기간</h3>
+      <p>META 일 10,000원 · SingleOne 일 800엔<br><br>
+      META 예산 전액을 <b>테스트 전용 세트에 고정 배정</b> → 21일간 노출 약 52,000회, 소재당 5,200회 확보.
+      9월에는 신규 소재를 기존 세트에 넣을 때마다 위너에 예산이 쏠려 노출 100~600회로 <b>평가 불가 상태가 3회 반복</b>됐습니다.</p></div>
+    <div class="card"><div class="no">메가포 · 10/1~10/9 (9일)</div><h3>전환 집중</h3>
+      <p>META 일 100,000원 · SingleOne 일 5,000엔<br><br>
+      검증 완료 소재로만 진입합니다. 증액은 <b>전일 사전 세팅</b>을 원칙으로 합니다 —
+      9월에는 당일 세팅으로 9/6 쿠폰 종료일 증액이 누락돼 계획의 53%만 집행됐습니다.</p></div>
+  </div>
+
+  <div class="scrollx"><table class="tbl">
+    <tr><th>구분</th><th>소재</th><th>근거</th></tr>
+    <tr><td>META 주력</td><td>@f_ksk_ · @h13i_14</td><td>노출 9만 회 규모에서 도착단가 85~88원 검증 완료</td></tr>
+    <tr class="hi"><td>META 확대 테스트</td><td>@hy.1.jp</td><td>도착단가 82원으로 효율 1위이나 지출 1.2만원에 그침</td></tr>
+    <tr><td>SingleOne 주력</td><td>@fsn_2525 · @f_ksk_</td><td>장바구니 기여 1·2위</td></tr>
+    <tr><td>상시 테스트</td><td>@taku_bistro · @__lilisasa · @kassun28</td><td>노출 300~800회로 평가 미완료</td></tr>
+  </table></div>
+
+  <h3 class="sub">9월에서 이어지는 개선 항목</h3>
+  <div class="scrollx"><table class="tbl">
+    <tr><th>항목</th><th>9월</th><th>10월</th></tr>
+    <tr><td>소재 평가 기준</td><td>CTR (행사 중 전환)</td><td>페이지 도착 1명당 비용 고정</td></tr>
+    <tr><td>소재 검증</td><td>본기간 중 시도 → 3회 실패</td><td>상시기간 전용 세트에서 사전 완료</td></tr>
+    <tr><td>소재 제작비</td><td>시딩 4,500,000원</td><td>2차 활용 (편집 200,000원)</td></tr>
+    <tr><td>예산 증액</td><td>당일 세팅 → 9/6 누락</td><td>전일 사전 세팅 원칙</td></tr>
+    <tr><td>페이지 도달률</td><td>인플루언서 56.1%</td><td>릴스 CTA 개선, 70% 목표</td></tr>
+  </table></div>
+
+  <h3 class="sub">제안 &amp; 문의사항</h3>
+  <div class="list">
+    <div class="li"><div class="ln">1</div><div><div class="lt">Qoo10 자체 노출면 확보 (최우선)</div>
+      <div class="ld">8월·9월 두 행사 연속 프로모션 페이지·랭킹·코스메셀렉트 유입 0건. 프로모션 페이지·랭킹 노출은 광고 입찰이 아닌 <b>MD 편성 사항</b>이므로 비용이 아닌 협의 항목으로 관리 필요.</div></div></div>
+    <div class="li"><div class="ln">2</div><div><div class="lt">상품 리스팅 통합</div>
+      <div class="ld">메인 10,764 PV (99.4%) / 오션블랙 59 / 테라코타 5 / 스톤화이트 3. 리뷰·판매량·랭킹이 4개로 분산되며, 8/30 매출은 PV 59건의 오션블랙 리스팅에서 발생. 색상을 옵션으로 통합 필요.</div></div></div>
+    <div class="li"><div class="ln">3</div><div><div class="lt">리뷰 확보 프로세스</div>
+      <div class="ld">현재 리뷰 0건으로 신규 브랜드의 최대 전환 장벽. Qoo10 리뷰 수는 검색·진열 랭킹에도 영향. 구매 고객 4명 대상 리뷰 요청 및 적립 프로모션 검토.</div></div></div>
+    <div class="li"><div class="ln">4</div><div><div class="lt">상품 페이지 이탈 구간 점검</div>
+      <div class="ld">유입 13,049명 대비 장바구니 25건(0.19%). 최종 결제 금액 표기, 배송 도착 예정일, 쿠폰 자동 적용 여부 등 결제 플로우 실측 점검 필요.</div></div></div>
+    <div class="li"><div class="ln">5</div><div><div class="lt">재방문 자산 구축</div>
+      <div class="ld">셀러샵 팔로워 0명 / 위시리스트 14건 / 장바구니 재진입 9건. 팔로우 쿠폰 등 락인 장치 도입 검토.</div></div></div>
+    <div class="li"><div class="ln">6</div><div><div class="lt">Meta 협력 광고 — 도입 보류 의견</div>
+      <div class="ld">Qoo10 마켓플레이스는 판매자 픽셀 설치가 제한되는 환경. 동일 데이터 경로를 사용하는 SingleOne에서 장바구니·매출 지표가 2~3배 과집계되는 현상이 확인됐고, 구매 데이터도 13일간 4건으로 전환 최적화 학습에 부족. 데이터 축적 또는 추적 정확도 개선 시점에 재검토 제안.</div></div></div>
+    <div class="li"><div class="ln">7</div><div><div class="lt">11월 메가와리에 신규 타이업 집중</div>
+      <div class="ld">8월 메가포 0건 / 9월 메가와리 4건 — 즉시 할인 행사의 전환력이 확인된 만큼 대형 시딩 투자는 메가와리에 배치. 9월 시딩 13건 중 검증 완료 2건 / 미검증 11건으로 기존 자산 소진이 우선.</div></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fbrand">ABITUDE · Qoo10 Japan</div>
+  <div class="fnote">
+    데이터 출처 — Qoo10 QSM(유입채널·거래현황·검색어), Meta 광고 관리자, 아드리엘 대시보드, SingleOne 퍼포먼스 리포트, 피쳐링 IG 콘텐츠 지표<br>
+    SingleOne 원화 환산 100엔 = 945원 기준 · 매출은 거래현황(쿠폰 적용 전) 42,240엔 기준, QSM 실결제 기준은 39,418엔<br>
+    SingleOne 리포트의 장바구니·매출 지표는 Qoo10 실측 대비 2~3배 과집계가 확인되어 실측 기준으로 해석<br>
+    8월 메가포 URL 직접입력 516건은 사내 접속분이 다수 포함된 것으로 추정되어 유효 유입에서 제외
+  </div>
+</div></footer>
+
+</body>
+</html>
